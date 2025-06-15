@@ -1,0 +1,146 @@
+/* ! Nav Bar */
+nav {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "PT Sans";
+}
+
+div nav div.logo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 0 0rem;
+}
+
+div nav div.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+div nav div.nav-links {
+    margin: 0 10px 0 0;
+    width: 30%;
+    height: 100%;
+}
+
+div nav div.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+    font-size: 1.6rem;
+}
+
+div nav div.nav-links ul li {
+    font-weight: 600;
+}
+
+div nav div.nav-links ul li a, div nav div.nav-links ul lii {
+    text-decoration: none;
+    color: var(--text-nav);
+}
+
+div nav div.nav-links ul li a.color-text {
+    color: var(--text-nav-hover);
+    border-bottom: 4px solid var(--text-nav-hover);
+}
+
+div nav div.nav-links ul li a:hover, div nav div.nav-links ul li i:hover {
+    color: var(--text-nav-hover);
+    cursor: pointer;
+}
+
+/* End Nav Bar */
+
+/* ! Drop Dawn Nav Bar */
+
+div.drop-nav {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* End Drop Dawn Nav Bar */
+
+/* ! Button Theme */
+.toggle-switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+}
+
+.switch-label {
+    position: absolute;
+    width: 90%;
+    height: 35px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+    margin-left: 5px;
+    left: 0;
+}
+
+.checkbox {
+    position: absolute;
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    left: 0;
+}
+
+.checkbox:checked~.slider {
+    background-color: var(--light);
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.checkbox:checked~.slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* End Button Theme */

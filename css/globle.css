@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    background-image: url("../images/Background-Final.svg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 3000px;
+    color: var(--text-page);
+}
